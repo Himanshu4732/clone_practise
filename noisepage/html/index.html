@@ -33,13 +33,28 @@
                     </ul>
                 </div>
                 <div class="nav-logo-right">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <ion-icon name="bag-handle-outline"></ion-icon>
-                    <ion-icon name="person"></ion-icon>
+                    <ion-icon name="search-outline" class="search"></ion-icon>
+                    <ion-icon name="bag-handle-outline" class="cart"></ion-icon>
+                    <ion-icon name="person" class="login"></ion-icon>
+                    <ion-icon name="menu-outline" class="hamburger" onclick="navbar()"></ion-icon>
                 </div>
             </div>
         </nav>
-    </section>
+    
+    <div class="ham_cont">
+        <div class="ham_title"><h3>Product</h3></div>
+        <div class="ham_title"><h3>Noise Junior</h3></div>
+        <div class="ham_title"><h3>Luna Ring</h3></div>
+        <div class="ham_title"><h3>Gift Store</h3></div>
+        <div class="ham_title"><h3>Help and support</h3></div>
+        <div class="ham_title"><h3>Register Warrenty</h3></div>
+        <div class="ham_title"><h3>Download your invoice</h3></div>
+        <div class="ham_title"><h3>Noise for Bussiness</h3></div>
+        <div class="ham_title loginpg"><h3>Login</h3></div>
+
+    </div>
+
+</section>
 
     <section class="watches-disp">
         <div class="watch-cont">
@@ -79,9 +94,10 @@
             <div class="watch-selling-heading">
                 <span>Just Launched</span>
             </div>
-            <div class="watches-image-cont">
+            <div class="watches-image-cont swiper-container">
                 <div class="watch-image-box">
-                    <div class="image-box"><img src="../img3/1.1_165afbbc-34fc-4eeb-8f7e-c30e2bfec61d.webp" alt="">
+                    <div class="image-box ">
+                        <img src="../img3/1.1_165afbbc-34fc-4eeb-8f7e-c30e2bfec61d.webp" alt="">
                     </div>
                     <div class="productabout">
                         <div class="producttitle"><span>NoiseFit Force Plus</span>
@@ -314,7 +330,7 @@
     </section>
 
     <section class="watch-dispaly">
-        <div class="tpwatches">
+        <div class="tpwatches tpwatches2 ">
 
             <div class="tp-right">
                 <div class="tp-right-cont">
@@ -483,15 +499,85 @@
 
                         </ul>
                     </div>
-                </div>
-                <div class="footer_cont">Copyright © 2023, Noise. All Rights Reserved.</div>
+                        <div class="fcr_phone">
+                            <div class="fcr_cont">
+                                <div class="fcr_cont_main">
+                                    <h3>Our product</h3>
+                                    <ion-icon class="icon" name="chevron-down-outline" onclick="footer_tog(0)"></ion-icon>
+                                </div>
+                                <div class="fcr_content hide">
+                                    <span>Smart Watches</span>
+                                    <span>Wireless Earphones</span>
+                                    <span>Wireless Earbuds</span>
+                                    <span>NoiseFit App</span>
+                                    <span>Accessories</span>
+                                    <span>Noise Gift Card</span>
+                                </div>
+                            </div>
+                            <div class="fcr_cont">
+                                <div class="fcr_cont_main">
+                                    <h3>For Bussiness</h3>
+                                    <ion-icon class="icon" name="chevron-down-outline" onclick="footer_tog(1)"></ion-icon>
+                                </div>
+                                <div class="fcr_content hide">
+                                    <span>Corporate Enquiries</span>
+                                    <span>Become an Affiliate</span>
+                                    <span>Noise For Business</span>
+                                </div>
+                            </div>
+                            <div class="fcr_cont">
+                                <div class="fcr_cont_main">
+                                    <h3>Support</h3>
+                                    <ion-icon class="icon" name="chevron-down-outline" onclick="footer_tog(2)"></ion-icon>
+                                </div>
+                                <div class="fcr_content hide">
+                                    <span>Download Your Invoice</span>
+                                    <span>Track Your Order</span>
+                                    <span>Shipping and Warranty Policy</span>
+                                    <span>Register Your Warranty</span>
+                                    <span>Product Support</span>
+                                    <span>Register a Complaint</span>
+                                    <span>Contact Us</span>
+                                </div>
+                            </div>
+                            <div class="fcr_cont">
+                                <div class="fcr_cont_main">
+                                    <h3>About noise</h3>
+                                    <ion-icon class="icon" name="chevron-down-outline" onclick="footer_tog(3)"></ion-icon>
+                                </div>
+                                <div class="fcr_content hide">
+                                    <span>About Us</span>
+                                    <span>Stories</span>
+                                    <span>Careers</span>
+                                    <span>In the Press</span>
+                                </div>
+                            </div>
+                            <div class="fcr_cont">
+                                <div class="fcr_cont_main">
+                                    <h3>Legel</h3>
+                                    <ion-icon class="icon" name="chevron-down-outline" onclick="footer_tog(4)"></ion-icon>
+                                </div>
+                                <div class="fcr_content hide">
+                                    <span>Terms & Conditions</span>
+                                    <span>Privacy Policy</span>
+                                    <span>Social Responsibility</span>
 
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
+            <div class="footer_cont">Copyright © 2023, Noise. All Rights Reserved.</div>
+
+        </div>
         </div>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
