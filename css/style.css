@@ -1,0 +1,780 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* top section */
+.intro {
+  margin: 0;
+  min-height: 91vh;
+  width: 100%;
+}
+
+.intro::before {
+  content: "";
+  background: url(../img/Top_banner-Desktop_copy_6_3_1_1900x.webp);
+  position: absolute;
+  height: 91vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -1000;
+}
+
+.ham_cont{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    
+    left: 0;
+    background-color: white;
+display: none;
+flex-direction: column;
+overflow-y: scroll
+;
+}
+
+.ham_title{
+    padding: 30px 20px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.loginpg{
+    padding-bottom: 100px;
+}
+
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav-cont {
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 13%;
+}
+
+.logo img {
+  width: 87px;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.nav-centre {
+  width: 74%;
+}
+
+.nav-centre ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-centre ul li {
+  list-style: none;
+  margin: 0px 0px;
+  line-height: 1;
+  padding: 19px 42px;
+}
+
+.nav-centre ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+
+.nav-centre ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200px;
+}
+
+.nav-logo-right {
+  width: 13%;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.nav-logo-right ion-icon {
+  color: #fff;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+/* second section */
+
+.watches-disp {
+  padding: 30px 15px;
+}
+
+.watch-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 47px;
+}
+
+.watch-cont img {
+  cursor: pointer;
+  width: 68px;
+  margin-bottom: 10px;
+}
+
+.watch-cont span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+/* watch selling section */
+.watch-selling {
+  margin: 0;
+}
+
+.watch-selling-cont {
+  padding: 50px 50px;
+}
+
+.watch-selling-heading {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.watch-selling-heading span {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #000;
+  line-height: 33px;
+  font-size: 33px;
+}
+
+.watches-image-cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+  flex-wrap: wrap;
+}
+
+.watch-image-box {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 20px 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 0.3s;
+  margin-bottom: 45px;
+}
+
+.watch-image-box:hover {
+  transform: scale(1.1);
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+}
+
+.watches-image-cont img {
+  align-items: center;
+  max-width: 220px;
+}
+
+.productabout {
+  padding: 1px 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.504);
+}
+
+.productabout .producttitle {
+  padding: 2px 5px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #000;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.productabout .producttags {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #000;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.product-cont-foot {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-price {
+  padding: 10px 0px;
+}
+
+.product-price .new-price {
+  padding: 8px 0px;
+}
+
+.product-price .new-price span {
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.product-price .old-price {
+  padding: 0px 0px;
+}
+
+.product-price .old-price span {
+  font-family: "Roboto", sans-serif;
+  color: #7b7b7b;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: line-through;
+}
+
+.product-price .old-price .offer-perc {
+  font-family: sans-serif;
+  color: #f22000;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  padding-left: 1px;
+}
+
+.product-buynow .btn {
+  background-color: #000000;
+  border: 0;
+  margin-left: 10px;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 13px 21px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.product-buynow .btn:before {
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.product-buynow .btn:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+/* tapsee section */
+.tpwatches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tpwatches ion-icon {
+  float: right;
+  font-size: 23px;
+}
+
+.tpimg {
+  outline: 1px solid black;
+  padding: 30px;
+}
+
+.tpimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.tp-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tp-right-cont {
+  width: 50%;
+  outline: 1px solid rgba(0, 0, 0, 0.575);
+}
+
+.tp-right-heading {
+  padding: 30px 30px 0px;
+}
+
+.tp-right-heading span {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.tp-right-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* random pic */
+.pic-section {
+  margin: -4px 0px;
+}
+
+.pic-section img {
+  width: 100%;
+}
+
+/* india ki hattrick pic */
+
+.pic-athelete {
+  margin: 0px 0px;
+}
+
+.pic-athelete img {
+  width: 100%;
+  height: auto;
+}
+
+/* signup area */
+
+.signup-cont {
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: solid 1px #c0c0c0;
+}
+
+.signup-right {
+  width: 50%;
+  border-left: 1px solid rgba(0, 0, 0, 0.471);
+}
+
+.signup-right img {
+  width: 100%;
+}
+
+.signup-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.signup-left h2 {
+  line-height: 1;
+  margin-bottom: 27px;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 600;
+  color: #000;
+}
+
+.desc {
+  max-width: 510px;
+  margin: 0 auto;
+  line-height: 1.78;
+  text-align: center;
+}
+
+.desc p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
+.subscription form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-email {
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 52px;
+  border-bottom: solid 1px #c0c0c0;
+  background: #fff;
+  font-size: 20px;
+}
+
+.subscription button {
+  color: #000;
+  background: #fff;
+  border: 1px solid black;
+  font-size: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 28px;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+/* noise stories */
+
+.noisestories {
+  margin: 20px 0px;
+}
+
+.noisestories-container {
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 1px #c0c0c0;
+  padding: 50px 50px 0px 50px;
+}
+
+.noisestories-heading h2 {
+  color: #000;
+  line-height: 25px;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.noisestories-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 40px 0px;
+}
+
+.noisest-cont-left {
+  display: flex;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 30px;
+}
+
+.noisest-cont-left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noisest-cont-left img {
+  width: 80%;
+  height: auto;
+}
+
+.noisest-cont-right {
+  display: flex;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 30px;
+}
+
+.noisest-cont-right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noisest-cont-right img {
+  width: 80%;
+  height: auto;
+}
+
+.noisestories-foot {
+  margin: 20px 0px;
+}
+
+.noisestories-foot a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #505af0;
+}
+
+.footer-cont {
+  padding: 50px 100px;
+}
+
+.footer-contentbox {
+  padding-top: 50px;
+}
+
+.footer-contentbox .noiselogo {
+  margin: 28px;
+  display: inline-block;
+}
+
+.fottercontent {
+  display: flex;
+  min-height: 360px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer-content-left {
+  width: 25%;
+}
+
+.footer-content-left h3 {
+  font-size: 20px;
+  margin: 0px 0px 10px 20px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footer-content-left div {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  width: 50%;
+}
+
+.footer-content-left a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+}
+
+.footer-content-right {
+  columns: 100px 3;
+  width: 75%;
+}
+
+.footer-content-right h3 {
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footbox {
+  margin-bottom: 30px;
+}
+
+.footer-content-right li {
+  list-style: none;
+  font-weight: 350;
+  font-size: 12px;
+  padding: 5px 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footer_cont {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* phone screen footer */
+
+.fcr_phone {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.fcr_cont {
+  width: 100%;
+  height: auto;
+}
+.fcr_cont_main {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.fcr_content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 25px 20px;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .watch-box {
+    padding: 0px 25px;
+  }
+  .watch-box img {
+    width: 50px;
+  }
+  .nav-logo-right {
+    width: 60%;
+  }
+
+  .hamburger {
+    display: inline;
+    size: 1.5rem;
+  }
+
+  .nav-centre {
+    display: none;
+  }
+
+  .login {
+    display: none;
+  }
+  .signup-left h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .desc p {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  .nav-logo-right ion-icon {
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .tpwatches {
+    display: flex;
+    flex-direction: column;
+  }
+  .tpwatches2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .signup-cont {
+    flex-direction: column;
+  }
+  .signup-right {
+    width: 100%;
+  }
+  .signup-left {
+    width: 100%;
+    height: 400px;
+  }
+
+  .watch-cont {
+    gap: 20px;
+  }
+  .watch-box {
+    padding: 0px 12px;
+  }
+  .search,
+  .cart {
+    display: none;
+  }
+  .nav-logo-right ion-icon:last-child {
+    font-size: xxx-large;
+  }
+  .watches-image-cont {
+    display: unset;
+  }
+  .fottercontent {
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .footer-content-right {
+    columns: auto 3;
+    width: 100%;
+    padding: 10px;
+  }
+  .footer-cont {
+    padding: 50px;
+  }
+  .footer-content-left div {
+    width: 25%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .footer-content-left {
+    width: 50%;
+  }
+  .footer-content-right {
+    display: none;
+  }
+  .fcr_phone {
+    display: flex;
+  }
+  .noisestories-content {
+    width: 100%;
+  }
+  .noisestories-container {
+    padding: 50px 20px 0px 20px;
+  }
+  .footer-content-left h3 {
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .watch-selling-cont {
+    padding: 50px 25px;
+  }
+  .tp-right-heading span {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .tpwatches ion-icon {
+    font-size: 15px;
+  }
+}
