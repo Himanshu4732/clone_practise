@@ -12,7 +12,7 @@
 
 .intro::before {
   content: "";
-  background: url(../img/Top_banner-Desktop_copy_6_3_1_1900x.webp);
+  background: url(../img/image_2023_09_22T08_25_30_674Z_1_1_1900x.webp);
   position: absolute;
   height: 91vh;
   width: 100%;
@@ -21,30 +21,35 @@
   z-index: -1000;
 }
 
-.ham_cont{
-    position: absolute;
-    width:100%;
-    height: 100vh;
-    
-    left: 0;
-    background-color: white;
-display: none;
-flex-direction: column;
-overflow-y: scroll
-;
+.ham_cont {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+
+  left: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
 }
 
-.ham_title{
-    padding: 30px 20px;
-    font-weight: 400;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.ham_title {
+  padding: 30px 20px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.loginpg{
-    padding-bottom: 100px;
+.ham_title h3 {
+  font-weight: 400;
 }
 
+.loginpg {
+  padding-bottom: 100px;
+}
 
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -638,15 +643,15 @@ overflow-y: scroll
 .fcr_cont_main {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px 5px;
   cursor: pointer;
 }
 
 .fcr_content {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px 25px 20px;
+  padding: 10px 20px 25px 5px;
   gap: 3px;
   cursor: pointer;
 }
@@ -693,6 +698,11 @@ overflow-y: scroll
 }
 
 @media screen and (max-width: 820px) {
+  .intro::before {
+    background: url(../img/image_2023_09_22T08_25_32_464Z_1_1_1200x.webp);
+    background-position: center;
+    background-size: cover;
+  }
   .tpwatches {
     display: flex;
     flex-direction: column;
@@ -723,7 +733,7 @@ overflow-y: scroll
     display: none;
   }
   .nav-logo-right ion-icon:last-child {
-    font-size: xxx-large;
+    font-size: 50px;
   }
   .watches-image-cont {
     display: unset;
@@ -739,7 +749,7 @@ overflow-y: scroll
     padding: 10px;
   }
   .footer-cont {
-    padding: 50px;
+    padding: 50px 10px;
   }
   .footer-content-left div {
     width: 25%;
@@ -763,6 +773,12 @@ overflow-y: scroll
   }
   .footer-content-left h3 {
     margin: 0px 0px 10px 0px;
+  }
+  .nav-cont {
+    padding: 0px 15px;
+  }
+  .fcr_cont_main h3 {
+    font-weight: 500;
   }
 }
 
