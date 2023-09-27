@@ -12,7 +12,7 @@ function navbar() {
 let ham_nav = document.querySelector(".ham_cont");
   let ham = navbar.lastElementChild
   ham.outerHTML = `<ion-icon name="close-outline" class="hamburger" onclick="closenav()"></ion-icon>`
-  ham_nav.style.display = "flex";
+  ham_nav.style.height = "100%";
 }
 
 function closenav() {
@@ -21,5 +21,5 @@ let ham_nav = document.querySelector(".ham_cont");
   let ham = navbar.lastElementChild
 
   ham.outerHTML = `<ion-icon name="menu-outline" class="hamburger" onclick="navbar()"></ion-icon>`
-  ham_nav.style.display = "none";
+  ham_nav.style.height = "0%";
 }
